@@ -1,0 +1,432 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.3, 10 May 2020) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 and academicon fonts
+%% and packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{myblue}{HTML}{01418f}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{Grey}{HTML}{4a4a4a}
+% \colorlet{name}{black}
+\colorlet{tagline}{myblue}
+\colorlet{heading}{myblue}
+\colorlet{headingrule}{myblue}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{myblue}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{Grey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Rajendra Singh}
+\tagline{Assistant Professor}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%% You can add multiple photos on the left or right
+\photoR{3cm}{Rajendra Singh trans}
+% \photoL{2cm}{Yacht_High,Suitcase_High}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+ \phone{ : +91 8619410073}
+\mailaddress{ : rajendracsengg@gmail.com}
+\location{Jaipur, Rajasthan }
+%\photo[80pt][0.4pt]{RajendraSingh.jpg} 
+%   \github{github.com/mmayer} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+  % \orcid{0000-0000-0000-0000}
+  %% You can add your own arbtrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{Anand International College of Engineering}{Assistant Professor}{2020 -- Ongoing}{Kannota,Jaipur}
+\begin{itemize}
+\item Department of Computer Science and Engineering
+\item Additive Responsibilities : Batch Counsellor
+\end{itemize}
+
+\divider
+
+\cvevent{Jaipur Engineering College}{Assistant Professor}{2015 -- 2020}{Kukas,Jaipur}
+\begin{itemize}
+\item Department of Computer Science and Engineering
+\item Additive Responsibilities : IT Cell, Lab Format Coordinator, Project coordinator
+\end{itemize}
+
+\divider
+
+\cvevent{Banwari Lal Mehalda Institute of Technology and Management Science}{Assistant Professor}{2010 -- 2012}{Khetri,Jhunjhunu}
+\begin{itemize}
+\item Department of Computer Science and Engineering
+\end{itemize}
+
+\divider
+
+\cvevent{NUTEK (P) Ltd.}{RF and TND Survey Engineer}{2008 -- 2010}{Mathura, UP}
+\begin{itemize}
+\item Survey lands for tower possibilities and collecting information to connect other tower
+\end{itemize}
+
+
+\divider
+
+\cvsection{ACADEMIC PROFILE}
+\cvsubsection{Technical Education}
+
+\cvevent{Manipal University Jaipur}{PhD}{2018 -- Ongoing}{Jaipur}
+\begin{itemize}
+\item Computer and Communication Engineering from School of Computing and IT
+\item Course work completed
+\end{itemize}
+
+\divider
+
+\cvevent{Jaipur Engineering College ( RTU, Kota ) }{M.Tech.}{2012 -- 2018}{Kukas,Jaipur}
+\begin{itemize}
+\item From Department of Computer Science and Engineering
+\item Succeeded with 63.40 \%
+\end{itemize}
+
+\divider
+
+\cvevent{Shekhawati Engineering College ( Rajasthan University ) }{B.E.}{2004 -- 2007}{Jhunjhunu, Rajasthan}
+\begin{itemize}
+\item From Department of Computer Science and Engineering
+\item Succeeded with 70.60 \% (Honors)
+\end{itemize}
+
+\divider
+
+\cvsubsection{Academic Education}
+
+
+\cvevent{Central Academy No 01 ( C.B.S.E. ) }{12\textsuperscript{th}}{2003}{Khetri Nagar, Jhunjhunu}
+\begin{itemize}
+\item Science
+\item Succeeded with 69.40 \%
+\end{itemize}
+
+\divider
+
+\cvevent{Central Academy No 02 ( C.B.S.E. ) }{10\textsuperscript{th}}{2001}{Khetri Nagar, Jhunjhunu}
+\begin{itemize}
+\item Physics, Chemistry and Maths
+\item Succeeded with 56.40 \%
+\end{itemize}
+
+
+\divider
+
+\cvsection{RESEARCH WORK}
+
+\cvevent{PhD Thesis}{Network on Chip}{Ongoing}{Manipal University jaipur}
+\begin{itemize}
+\item Under Guidance of : Dr Manoj Kumar Bohra
+\item Working on congestion control and fault tolerance
+\item Simulation Tool: Noxim Simulator
+\end{itemize}
+
+\divider
+
+\cvevent{M.Tech Dissertation}{A New Hybrid Approach in PCA Based Palm Print Recognition System}{2018}{Jaipur Engineering College}
+\begin{itemize}
+\item Under Guidance of : Mr Sourbh Singh
+\item Propose a distinct scheme to facilitate the dynamic selection of palm print pattern to match it by combining various global and local features of a palm print in a hierarchical way
+\item Simulation Tool: Mat Lab
+\end{itemize}
+
+\divider
+
+\cvevent{B.Tech Project}{Website - To provide study material}{2007}{Shekhawati Engineering College}
+\begin{itemize}
+\item Propose a distinct scheme to facilitate the dynamic selection of palm print pattern to match it by combining various global and local features of a palm print in a hierarchical way
+\item Tools: PHP, MYSQL, Dreamweaver, WAMP Server
+\end{itemize}
+
+
+%\newpage
+\cvsection{CONFERENCES / SEMINARS / WORKSHOPS}
+
+\cvsubsection{Presented}
+\cvevent{}{}{04\textsuperscript{th} May 2019}{Jaipur}
+\begin{itemize}
+\item Coordinate One Day "Workshop on Scilab" organized by IIT Bombay at Jaipur Engineering College kukas
+\end{itemize}
+\cvevent{}{}{07\textsuperscript{th}--09\textsuperscript{th} September 2016}{Amity University Uttar Pradesh}
+\begin{itemize}
+\item 5\textsuperscript{th} International Conference on Reliability, Infocom Technologies and Optimization (ICRITO)(Trends and Future Directions), Organized in association with Computer Society of India (CSI) at Amity University Uttar
+\end{itemize}
+
+
+\divider
+
+\cvsubsection{Attended}
+\begin{itemize}
+\item National Workshop on "Pladiarism, Research, Ethics and Patent ( PREP - 2020 )" Organized by Directorate of Research ( DoR ), Manipal University Jaipur. ( 25\textsuperscript{th} - 27\textsuperscript{th} June 2020 )
+\item One week short term training program on "Python basic, Machine Leaarning and Blockchain" Organized by K. J. Somaiya Institute of Engineering and Information Technology Sion, Mumbai. ( 08\textsuperscript{th} - 13\textsuperscript{th} June 2020 )
+\item Four Days "International Science and Technology Online Lecture Series" Organized by Anand International College of Engineering, Jaipur. ( 03\textsuperscript{rd} - 06\textsuperscript{th} June 2020 )
+\item Five  Days Faculty Development Programme on "Python and Emerging Trends in Machine Learning" Conducted by Forsk Coding School, Jaipur. ( 02\textsuperscript{nd} - 06\textsuperscript{th} June 2020 )
+\item Five  Days Online Faculty Development Program on "Python 3.4.3" Organized by Anand International College of Engineering, Jaipur. ( 26\textsuperscript{th} - 30\textsuperscript{th} May 2020 )
+\item Five  Days National Level Online Faculty Development Programme on "Artificial Intelligence" Organized by Lendi Institute of Technology in association with NYCI and Brainovision Solution India Pvt Ltd. ( 22\textsuperscript{th} - 26\textsuperscript{th} May 2020 )
+\item R training Organized by IMS,Noida (with course material provided by the Spoken Tutorial Project, IIT Bombay.) ( January 2020 )
+\item Three Days "Faculty Development Program for Student Induction" Organized by Anand International College of Engineering, Jaipur. ( 16\textsuperscript{th} - 18\textsuperscript{th} January 2020 )
+\item One Day Coordinators' "Workshop on Scilab" Organized by IIT Bombay at ISS, Jaipur. ( 16\textsuperscript{th} April 2019 )
+\item Two Days National Workshop on "Prospective Research Intelligent System and Methods" Organized by  Jaipur Engineering College. ( 11\textsuperscript{th} – 12\textsuperscript{st} October 2019 )
+\item Two Days Faculty Development Program on "Power System Dynamics and Voltage Stability Studies" Organized by TEQIP-III RTU, kota hosted at Jaipur Engineering College. ( 20\textsuperscript{th} – 21\textsuperscript{st} September 2019 )
+\item Two Days Faculty Development Program on "Cloud Computing and Internet of Things(IOTs)" Organized by TEQIP-III RTU, kota hosted at Jaipur Engineering College. ( 06\textsuperscript{th} – 07\textsuperscript{st} September 2019 )
+
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{OBJECTIVE}
+\begin{quote}
+To join an organization where I can utilize my education, skills and abilities to serve the human kind and can enrich my knowledge and experience as well as ensure my growth along 
+with the organization.
+\end{quote}
+
+\cvsection{IT EXPOSURE}
+
+\cvachievement{\faWindows}{Operating Systems:}{Windows 95/98/2000/XP/VISTA/7
+Linux : Ubuntu 14.04}
+
+\divider
+
+\cvachievement{\faLanguage}{Languages:}{C, C++, Java, Python, PHP}
+
+\divider
+
+\cvachievement{\faHtml5}{Web Development:}{HTML, XHTML, CSS, JavaScript, Dreamweaver 8}
+
+\divider
+
+\cvachievement{\faDatabase}{Databases:}{MySQL}
+
+\divider
+
+\cvachievement{\faWindows}{Additional Tools:}{Latex, Photoshop, Maltab, SciLab}
+
+
+
+
+\divider
+\cvsection{PUBLICATIONS}
+\cvevent{}{}{2017}{}
+\begin{itemize}
+\item Rajendra Singh and Saurabh Singh, "A Review on Palm Print Recognition System", International Journal on Future Revolution in Computer Science and Communication Engineering ISSN: 2454-4248 Volume: 3 Issue: 9 130 – 133, September 2017
+\end{itemize}
+\cvevent{}{}{2016}{}
+\begin{itemize}
+\item Rajendra Singh and Shivkant Kaushik, "A New Hybrid Approach for Palm Print Recognition in PCA Based Palm Print Recognition System", 2016 5th International Conference on Reliability, Infocom Technologies and Optimization (ICRITO), DOI: 10.1109/ICRITO.2016.7784958, Sep. 7-9, 2016
+\end{itemize}
+\cvevent{}{}{2016}{}
+\begin{itemize}
+\item Rajendra Singh and Priyanka Chouhan, " Security Attacks on Cloud Computing With Possible Solution", International Journal of Advanced Research in Computer Science and Software Engineering ISSN: 2277 128X Volume 6, Issue 1, January 2016
+\end{itemize}
+
+
+
+\cvsection{SUBJECT OF INTEREST}
+
+\cvtag{Machine Learning}
+\cvtag{Programming languages}
+\cvtag{like c, c++ and java}
+\cvtag{Compiler Construction}
+\cvtag{Computer Networking}\\
+\cvtag{Information Security and Cryptography}
+\cvtag{Client Server Computing}
+
+
+\cvsection{Strengths}
+
+\cvtag{Positive}\cvtag{Hard \& Smart working}\\
+\cvtag{Adaptive to Environment}\\
+\cvtag{Motivator \& Leader}
+
+%\divider\smallskip
+
+
+
+
+
+
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+% \divider
+
+\cvskill{Hindi}{5}
+% \divider
+
+\cvsection{OTHER ACTIVITY}
+
+\cvevent{Virtual Labs (IIT Bombay)}{Anand International College of Engineering}{2021-Ongoing}{}
+\begin{itemize}
+\item Technical Assistance.
+\item Nodal center for IIT Bombay.
+\end{itemize}
+
+\cvevent{Microsoft Teams (Admin)}{Anand International College of Engineering}{2021-Ongoing}{}
+\begin{itemize}
+\item Create faculty and student account.
+\item Provide assistance for MS Teams.
+\item Create and manage departmental classes, and assist other department.
+\end{itemize}
+
+\cvevent{SPOKEN TUTORIAL}{Anand International College of Engineering}{2020-Ongoing}{}
+\begin{itemize}
+\item College SPOC for Spoken Tutorial.
+\item Enroll students and prepare course planner form.
+\item Schedule and conduct certification exam.
+\end{itemize}
+
+\cvevent{IT CELL}{Jaipur Engineering College, Kukas}{2016-2019}{}
+\begin{itemize}
+\item Website updating regularly.
+\item Handle social medial Accounts.
+\item Search Engine Optimization (SEO) for college website.
+\end{itemize}
+
+\newpage
+
+\cvsection{Certification Courses}
+
+\cvsubsection{Coursera (online non-credit courses)}
+\cvevent{Java Programming: Solving Problems with
+Software}{}{13\textsuperscript{th} July 2020}{Duke University}
+\cvevent{HTML, CSS, and Javascript for Web Developers}{}{06\textsuperscript{th} June 2020}{Johns Hopkins University}
+\cvevent{Introduction to Data Science in Python}{}{17\textsuperscript{th} May 2020}{University of Michigan}
+
+\cvsection{PERSONAL PROFILE}
+
+\cvsubsection{Name:}
+\cvevent{Rajendra Singh}{}{}{}
+
+\cvsubsection{Address :}
+\cvevent{Plot No 411, ManuGovind Vihar, Near Kishorepura, Bindayka, JAIPUR - 302012}{}{}{}
+
+\cvsubsection{Father’s Name:}
+\cvevent{Shri. Narpat Singh}{}{}{}
+
+\cvsubsection{Date of Birth :}
+\cvevent{June 21 ,1984}{}{}{}
+
+\cvsubsection{Nationality:}
+\cvevent{Indian}{}{}{}
+
+\cvsubsection{Marital Status:}
+\cvevent{Single}{}{}{}
+
+\cvsubsection{Gender:}
+\cvevent{Male}{}{}{}
+
+\cvsubsection{Mobile No:}
+\cvevent{+91 8619410073\linebreak+91 9928041769}{}{}{}
+
+
+\end{paracol}
+
+\columnratio{1}
+\divider
+\divider
+\cvsection{DECLARATION}
+\cvsubsection{I hereby declare that the above written particulars are true to the best of my knowledge and belief.}
+\divider
+\begin{itemize}
+\item Date :
+\item Place :\hfill Rajendra Singh 
+\end{itemize}
+
+
+\end{document}
